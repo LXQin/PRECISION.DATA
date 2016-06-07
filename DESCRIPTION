@@ -1,0 +1,16 @@
+Package: PRECISIONDATA
+Type: Package
+Title: Datasets for the PaiREd miCrorna sImulation Study desIgn mOlecular classificatioN (PRECISION) Package
+Version: 0.1
+Date: 2016-04-22
+Author: Rebecca Huang, Li-Xuan Qin
+Maintainer: Rebecca Huang <huangh4@mskcc.org>
+Description: Different versions of the unique paired datasets that are used in the PRECISION package.
+License: GPL (>= 2)
+Depends:
+    R (>= 3.0.2)
+Suggests:
+    rmarkdown,
+    knitr
+LazyData: TRUE
+RoxygenNote: 5.0.1
