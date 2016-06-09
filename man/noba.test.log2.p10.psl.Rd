@@ -4,7 +4,7 @@
 \name{noba.test.log2.p10.psl}
 \alias{noba.test.log2.p10.psl}
 \title{The non-randomized (test) probe-set-level dataset, summarized from the non-randomized probe-level dataset with 10 probes for each unique probe}
-\format{A data matrix with 3523 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\format{A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
 \usage{
 noba.test.log2.p10.psl
 }
@@ -14,5 +14,5 @@ The non-randomized probe-set level dataset, non-control-probe-removed, no backgr
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 }
-\keyword{data}
+\keyword{test.data}
 

@@ -3,16 +3,13 @@
 \docType{data}
 \name{unipbset}
 \alias{unipbset}
-\title{The estimated sample effect data}
-\format{A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\title{Unique probe names}
+\format{A list of two vectors one with length of 3523 and one with length of 6}
 \usage{
 unipbset
 }
 \description{
-The estimated sample effect data, derived from the randomized probe-level dataset.
+Unique probe names for non-control probes and negatively biological control probes from Agilent microarrays.
 }
-\references{
-\url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-}
-\keyword{data}
+\keyword{probe.names}
 

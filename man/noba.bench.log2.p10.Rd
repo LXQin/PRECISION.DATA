@@ -4,7 +4,7 @@
 \name{noba.bench.log2.p10}
 \alias{noba.bench.log2.p10}
 \title{The randomized (benchmark) probe-level dataset, 10 probes for each unique probe}
-\format{A data matrix with 35230 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\format{A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
 \usage{
 noba.bench.log2.p10
 }
@@ -14,5 +14,5 @@ The randomized probe-level dataset, non-control-probe-removed, 10 probes for eac
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 }
-\keyword{data}
+\keyword{bench.data}
 

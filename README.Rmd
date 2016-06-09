@@ -8,7 +8,7 @@ Each of the two datasets has two auxiliary datasets: one probe-truncated dataset
 
 `PRECISIONDATA` package is currently availabe on `GitHub`. To load the package, type the following command in R console:
 
-```{r load.pkg, message = FALSE}
+```{r load.pkg, message = FALSE, eval = FALSE}
 library(devtools) # devtools is required
 
 install_github("rebeccahch/precisiondata")
@@ -24,4 +24,6 @@ data("noba.test.log2")
 ```
 
 When `PRECISIONDATA` is used, please cite the following papers:
+
+Qin LX, Zhou Q, Bogomolniy F, Villafania L, Olvera N, Cavatore M, Satagopan JM, Begg CB, Levine DA. Blocking and randomization to improve molecular biomarker discovery. Clinical Cancer Research 2014, 20:3371-3378 [here](http://clincancerres.aacrjournals.org/content/20/13/3371.long)
 

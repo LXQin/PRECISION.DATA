@@ -1,10 +1,10 @@
-#' @title The randomized (benchmark) probe-level dataset
+#' @title The randomized (benchmark) probe-level dataset, before preprocessed
 #'
 #' @description The randomized probe-level dataset, non-control-probe-removed, no background adjusted and after logged 2.
 #'
-#' @format A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords bench.data
 
 "noba.bench.log2"
 
@@ -12,9 +12,9 @@
 #'
 #' @description The randomized probe-level dataset, non-control-probe-removed, 10 probes for each unique probe, no background adjusted and after logged 2.
 #'
-#' @format A data matrix with 35230 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords bench.data
 
 "noba.bench.log2.p10"
 
@@ -22,19 +22,19 @@
 #'
 #' @description The randomized probe-set level dataset, non-control-probe-removed, no background adjusted and after logged 2, summarized from noba.bench.log2.p10.
 #'
-#' @format A data matrix with 3523 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords bench.data
 
 "noba.bench.log2.p10.psl"
 
-#' @title The non-randomized (test) probe-level dataset
+#' @title The non-randomized (test) probe-level dataset, before preprocessed
 #'
 #' @description The non-randomized probe-level dataset, non-control-probe-removed, no background adjusted and after logged 2.
 #'
-#' @format A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords test.data
 
 "noba.test.log2"
 
@@ -42,9 +42,9 @@
 #'
 #' @description The non-randomized probe-level dataset, non-control-probe-removed, 10 probes for each unique probe, no background adjusted and after logged 2.
 #'
-#' @format A data matrix with 35230 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords test.data
 
 "noba.test.log2.p10"
 
@@ -52,18 +52,17 @@
 #'
 #' @description The non-randomized probe-set level dataset, non-control-probe-removed, no background adjusted and after logged 2, summarized from noba.test.log2.p10.
 #'
-#' @format A data matrix with 3523 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
+#' @format A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @keywords test.data
 
 "noba.test.log2.p10.psl"
 
-#' @title The estimated sample effect data
+#' @title Unique probe names
 #'
-#' @description The estimated sample effect data, derived from the randomized probe-level dataset.
+#' @description Unique probe names for non-control probes and negatively biological control probes from Agilent microarrays.
 #'
-#' @format A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.
-#' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
-#' @keywords data
+#' @format A list of two vectors one with length of 3523 and one with length of 6
+#' @keywords probe.names
 
 "unipbset"

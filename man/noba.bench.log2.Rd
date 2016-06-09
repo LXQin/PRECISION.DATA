@@ -3,8 +3,8 @@
 \docType{data}
 \name{noba.bench.log2}
 \alias{noba.bench.log2}
-\title{The randomized (benchmark) probe-level dataset}
-\format{A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\title{The randomized (benchmark) probe-level dataset, before preprocessed}
+\format{A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
 \usage{
 noba.bench.log2
 }
@@ -14,5 +14,5 @@ The randomized probe-level dataset, non-control-probe-removed, no background adj
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 }
-\keyword{data}
+\keyword{bench.data}
 

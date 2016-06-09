@@ -3,8 +3,8 @@
 \docType{data}
 \name{noba.test.log2}
 \alias{noba.test.log2}
-\title{The non-randomized (test) probe-level dataset}
-\format{A data matrix with 53880 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\title{The non-randomized (test) probe-level dataset, before preprocessed}
+\format{A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
 \usage{
 noba.test.log2
 }
@@ -14,5 +14,5 @@ The non-randomized probe-level dataset, non-control-probe-removed, no background
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 }
-\keyword{data}
+\keyword{test.data}
 

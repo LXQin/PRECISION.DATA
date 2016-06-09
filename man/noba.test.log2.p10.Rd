@@ -4,7 +4,7 @@
 \name{noba.test.log2.p10}
 \alias{noba.test.log2.p10}
 \title{The non-randomized (test) probe-level dataset, 10 probes for each unique probe}
-\format{A data matrix with 35230 rows (probes) and 192 columns (samples), column names ending with E/V are endometrial/ovarian samples.}
+\format{A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
 \usage{
 noba.test.log2.p10
 }
@@ -14,5 +14,5 @@ The non-randomized probe-level dataset, non-control-probe-removed, 10 probes for
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 }
-\keyword{data}
+\keyword{test.data}
 
