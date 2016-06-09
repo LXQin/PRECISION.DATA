@@ -6,7 +6,7 @@ The two core datasets are `noba.bench.log2` and `noba.test.log2`, both probe-lev
 
 Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.bench.log2` is the randomized probe-level dataset and `noba.bench.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.bench.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
 
-`PRECISIONDATA` package is currently availabe on `GitHub`. To load the package, type the following command in R console:
+`PRECISIONDATA` package is currently availabe on GitHub. To load the package, type the following command in R console:
 
 ```{r load.pkg, message = FALSE, eval = FALSE}
 library(devtools) # devtools is required
@@ -16,7 +16,7 @@ library(PRECISIONDATA)
 
 ```
 
-To fetch the package, use the following code:
+To fetch data, use the following code:
 
 ```{r data, message = FALSE, eval = FALSE}
 data("noba.bench.log2")
