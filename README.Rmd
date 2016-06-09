@@ -1,8 +1,12 @@
 # Data package for PRECISION
 
-The aim of `PRECISIONDATA` is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)) as the data package. `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the PRECISION package. The two core datasets are `noba.bench.log2` and `noba.test.log2`, both on probe-level data; detailed descriptions can be found in Qin et al. [link](http://clincancerres.aacrjournals.org/content/20/13/3371.long). Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.bench.log2` is the randomized probe-level dataset and `noba.bench.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.bench.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
+The aim of `PRECISIONDATA` is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)) as the data package. `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the PRECISION package. 
 
-`PRECISIONDATA` package is currently availabe on `GitHub`. By typing the following command in R console, users can fetch the package:
+The two core datasets are `noba.bench.log2` and `noba.test.log2`, both probe-level data. The unique pair of datasets are generated from the same set of 96 endometrial and 96 ovarian tumor samples using different experimental handling designs. The first dataset was handled by one technician in one run and its arrays were randomly assigned to tumor samples using blocking (by both array slide and row-column location on each slide). The second dataset was handled by two technicians in five batches. Its arrays were assigned in the order of sample collection without blocking to mimick typical practice. More detailed descriptions can be found in [Qin et al.](http://clincancerres.aacrjournals.org/content/20/13/3371.long). 
+
+Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.bench.log2` is the randomized probe-level dataset and `noba.bench.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.bench.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
+
+`PRECISIONDATA` package is currently availabe on `GitHub`. To load the package, type the following command in R console:
 
 ```{r load.pkg, message = FALSE}
 library(devtools) # devtools is required
@@ -11,3 +15,13 @@ install_github("rebeccahch/precisiondata")
 library(PRECISIONDATA)
 
 ```
+
+To fetch the package, use the following code:
+
+```{r data, message = FALSE, eval = FALSE}
+data("noba.bench.log2")
+data("noba.test.log2")
+```
+
+When `PRECISIONDATA` is used, please cite the following papers:
+
