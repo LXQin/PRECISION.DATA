@@ -1,3 +1,13 @@
 # Data package for PRECISION
 
-Welcome to `PRECISIONDATA`! This is a data package for `PRECISION` package.
+The aim of `PRECISIONDATA` is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)) as the data package. `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the PRECISION package. The two core datasets are `noba.bench.log2` and `noba.test.log2`, both on probe-level data; detailed descriptions can be found in Qin et al. [link](http://clincancerres.aacrjournals.org/content/20/13/3371.long). Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.bench.log2` is the randomized probe-level dataset and `noba.bench.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.bench.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
+
+`PRECISIONDATA` package is currently availabe on `GitHub`. By typing the following command in R console, users can fetch the package:
+
+```{r load.pkg, message = FALSE}
+library(devtools) # devtools is required
+
+install_github("rebeccahch/precisiondata")
+library(PRECISIONDATA)
+
+```
