@@ -25,5 +25,5 @@ data("noba.test.log2")
 
 When `PRECISIONDATA` is used, please cite the following papers:
 
-Qin LX, Zhou Q, Bogomolniy F, Villafania L, Olvera N, Cavatore M, Satagopan JM, Begg CB, Levine DA. Blocking and randomization to improve molecular biomarker discovery. Clinical Cancer Research 2014, 20:3371-3378 [here](http://clincancerres.aacrjournals.org/content/20/13/3371.long)
+Qin LX, Zhou Q, Bogomolniy F, Villafania L, Olvera N, Cavatore M, Satagopan JM, Begg CB, Levine DA. Blocking and randomization to improve molecular biomarker discovery. Clinical Cancer Research 2014, 20:3371-3378 [http://clincancerres.aacrjournals.org/content/20/13/3371.long](http://clincancerres.aacrjournals.org/content/20/13/3371.long)
 
