@@ -1,6 +1,6 @@
 # Data package for PRECISION
 
-The aim of `PRECISIONDATA`, a data package, is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)). `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the PRECISION package. 
+The aim of `PRECISIONDATA`, a data package, is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)). `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the `PRECISION` package. 
 
 The two core datasets are `noba.bench.log2` and `noba.test.log2`, both probe-level data. The unique pair of datasets are generated from the same set of 96 endometrial and 96 ovarian tumor samples using different experimental handling designs. The first dataset was handled by one technician in one run and its arrays were randomly assigned to tumor samples using blocking (by both array slide and row-column location on each slide). The second dataset was handled by two technicians in five batches. Its arrays were assigned in the order of sample collection without blocking to mimick typical practice. More detailed descriptions can be found in [Qin et al.](http://clincancerres.aacrjournals.org/content/20/13/3371.long)
 
