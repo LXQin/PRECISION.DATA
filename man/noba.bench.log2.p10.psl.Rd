@@ -3,16 +3,15 @@
 \docType{data}
 \name{noba.bench.log2.p10.psl}
 \alias{noba.bench.log2.p10.psl}
-\title{The randomized (benchmark) probe-set-level dataset, summarized from the randomized probe-level dataset with 10 probes for each unique probe}
-\format{A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
+\title{The uniformly-handled probe-set-level dataset}
+\format{A data matrix with 3523 rows (probes) and 192 columns (samples).}
 \usage{
 noba.bench.log2.p10.psl
 }
 \description{
-The randomized probe-set level dataset, non-control-probe-removed, no background adjusted and after logged 2, summarized from noba.bench.log2.p10.
-}
-\references{
-\url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+The uniformly-handled probe-set-level dataset.
+It is probe-set summarized from the uniformly-handled probe-level dataset with
+10 probes for each unique probe (\code{noba.bench.log2.p10}), using median.
 }
 \keyword{bench.data}
 

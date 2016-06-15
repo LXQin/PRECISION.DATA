@@ -3,16 +3,17 @@
 \docType{data}
 \name{noba.test.log2.p10}
 \alias{noba.test.log2.p10}
-\title{The non-randomized (test) probe-level dataset, 10 probes for each unique probe}
-\format{A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
+\title{The non-uniformly-handled probe-level dataset, 10 probes for each unique probe}
+\format{A data matrix with 35230 rows (probes) and 192 columns (samples).}
 \usage{
 noba.test.log2.p10
 }
 \description{
-The non-randomized probe-level dataset, non-control-probe-removed, 10 probes for each unique probe, no background adjusted and after logged 2.
-}
-\references{
-\url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+The non-uniformly-handled probe-level dataset
+with 10 probes for each unique probe.
+It is truncated from the non-uniformly-handled probe-level dataset
+ (\code{noba.test.log2.p10}), by keeping only the first 10 probes
+ for each unique probe.
 }
 \keyword{test.data}
 

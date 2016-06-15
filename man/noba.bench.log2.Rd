@@ -3,13 +3,18 @@
 \docType{data}
 \name{noba.bench.log2}
 \alias{noba.bench.log2}
-\title{The randomized (benchmark) probe-level dataset, before preprocessed}
-\format{A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.}
+\title{The uniformly-handled probe-level dataset, before preprocessing}
+\format{A data matrix with 53880 rows (probes) and 192 columns (samples).}
 \usage{
 noba.bench.log2
 }
 \description{
-The randomized probe-level dataset, non-control-probe-removed, no background adjusted and after logged 2.
+The uniformly-handled (benchmark) probe-level dataset,
+with control probes removed.
+The expressions are on a log2 scale without background adjustment.
+The sample IDs (the column names) ending with "E" or "V" are used to indicate
+whether a sample is endometrial or ovarian tumor sample. There are
+96 endometrial and 96 ovarian tumor samples.
 }
 \references{
 \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}

@@ -1,68 +1,85 @@
-#' @title The randomized (benchmark) probe-level dataset, before preprocessed
+#' @title The uniformly-handled probe-level dataset, before preprocessing
 #'
-#' @description The randomized probe-level dataset, non-control-probe-removed, no background adjusted and after logged 2.
+#' @description The uniformly-handled (benchmark) probe-level dataset,
+#' with control probes removed.
+#' The expressions are on a log2 scale without background adjustment.
+#' The sample IDs (the column names) ending with "E" or "V" are used to indicate
+#' whether a sample is endometrial or ovarian tumor sample. There are
+#' 96 endometrial and 96 ovarian tumor samples.
 #'
-#' @format A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
+#' @format A data matrix with 53880 rows (probes) and 192 columns (samples).
+#'
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+#'
 #' @keywords bench.data
 
 "noba.bench.log2"
 
-#' @title The randomized (benchmark) probe-level dataset, 10 probes for each unique probe
+#' @title The uniformly-handled probe-level dataset, 10 probes for each unique probe
 #'
-#' @description The randomized probe-level dataset, non-control-probe-removed, 10 probes for each unique probe, no background adjusted and after logged 2.
+#' @description The uniformly-handled probe-level dataset
+#' with 10 probes for each unique probe.
+#' It is truncated from the uniformly-handled probe-level dataset
+#'  (\code{noba.bench.log2.p10}), by keeping only the first 10 probes
+#'  for each unique probe.
 #'
-#' @format A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
-#' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+#' @format A data matrix with 35230 rows (probes) and 192 columns (samples).
+#'
 #' @keywords bench.data
 
 "noba.bench.log2.p10"
 
-#' @title The randomized (benchmark) probe-set-level dataset, summarized from the randomized probe-level dataset with 10 probes for each unique probe
+#' @title The uniformly-handled probe-set-level dataset
 #'
-#' @description The randomized probe-set level dataset, non-control-probe-removed, no background adjusted and after logged 2, summarized from noba.bench.log2.p10.
+#' @description The uniformly-handled probe-set-level dataset.
+#' It is probe-set summarized from the uniformly-handled probe-level dataset with
+#' 10 probes for each unique probe (\code{noba.bench.log2.p10}), using median.
 #'
-#' @format A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
-#' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+#' @format A data matrix with 3523 rows (probes) and 192 columns (samples).
+#'
 #' @keywords bench.data
 
 "noba.bench.log2.p10.psl"
 
-#' @title The non-randomized (test) probe-level dataset, before preprocessed
+#' @title The non-uniformly-handled probe-level dataset, before preprocessing
 #'
-#' @description The non-randomized probe-level dataset, non-control-probe-removed, no background adjusted and after logged 2.
+#' @description The non-uniformly-handled (test) probe-level dataset,
+#' with control probes removed.
+#' The expressions are on a log2 scale without background adjustment.
+#' The sample IDs (the column names) ending with "E" or "V" are used to indicate
+#' whether a sample is endometrial or ovarian tumor sample. There are
+#' 96 endometrial and 96 ovarian tumor samples.
 #'
-#' @format A data matrix with 53880 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
+#' @format A data matrix with 53880 rows (probes) and 192 columns (samples).
+#'
 #' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+#'
 #' @keywords test.data
 
 "noba.test.log2"
 
-#' @title The non-randomized (test) probe-level dataset, 10 probes for each unique probe
+#' @title The non-uniformly-handled probe-level dataset, 10 probes for each unique probe
 #'
-#' @description The non-randomized probe-level dataset, non-control-probe-removed, 10 probes for each unique probe, no background adjusted and after logged 2.
+#' @description The non-uniformly-handled probe-level dataset
+#' with 10 probes for each unique probe.
+#' It is truncated from the non-uniformly-handled probe-level dataset
+#'  (\code{noba.test.log2.p10}), by keeping only the first 10 probes
+#'  for each unique probe.
 #'
-#' @format A data matrix with 35230 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
-#' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
+#' @format A data matrix with 35230 rows (probes) and 192 columns (samples).
+#'
 #' @keywords test.data
 
 "noba.test.log2.p10"
 
-#' @title The non-randomized (test) probe-set-level dataset, summarized from the non-randomized probe-level dataset with 10 probes for each unique probe
+#' @title The non-uniformly-handled probe-set-level dataset
 #'
-#' @description The non-randomized probe-set level dataset, non-control-probe-removed, no background adjusted and after logged 2, summarized from noba.test.log2.p10.
+#' @description The non-uniformly-handled probe-set-level dataset.
+#' It is probe-set summarized from the non-uniformly-handled probe-level dataset with
+#' 10 probes for each unique probe (\code{noba.test.log2.p10}), using median.
+
+#' @format A data matrix with 3523 rows (probes) and 192 columns (samples).
 #'
-#' @format A data matrix with 3523 rows (probes) and 192 columns (samples); column names ending with "E" or "V" differentiates whether a sample is endometrial or ovarian.
-#' @references \url{http://clincancerres.aacrjournals.org/content/20/13/3371.long}
 #' @keywords test.data
 
 "noba.test.log2.p10.psl"
-
-#' @title Unique probe names
-#'
-#' @description Unique probe names for non-control probes and negatively biological control probes from Agilent microarrays.
-#'
-#' @format A list of two vectors one with length of 3523 and one with length of 6
-#' @keywords probe.names
-
-"unipbset"
