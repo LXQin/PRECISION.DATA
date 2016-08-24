@@ -3,14 +3,14 @@
 \docType{data}
 \name{noba.nuhdata.log2.p10.psl}
 \alias{noba.nuhdata.log2.p10.psl}
-\title{The non-uniformly-handled probe-set-level dataset}
+\title{The nonuniformly-handled probe-set-level dataset}
 \format{A data matrix with 3523 rows (probes) and 192 columns (samples).}
 \usage{
 noba.nuhdata.log2.p10.psl
 }
 \description{
-The non-uniformly-handled probe-set-level dataset.
-It is probe-set summarized from the non-uniformly-handled probe-level dataset with
+The nonuniformly-handled probe-set-level dataset.
+It is probe-set summarized from the nonuniformly-handled probe-level dataset with
 10 probes for each unique probe (\code{noba.nuhdata.log2.p10}), using median.
 }
 \keyword{nuhdata}

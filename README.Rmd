@@ -2,9 +2,9 @@
 
 The aim of `PRECISIONDATA`, a data package, is to compliment the `PRECISION` package (can be found [here](https://github.com/rebeccahch/precision)). `PRECISIONDATA` contains a number of datasets (before and after pre-processed) that can be used as arguments for the functions in the `PRECISION` package. 
 
-The two core datasets are `noba.bench.log2` and `noba.test.log2`, both probe-level data. The unique pair of datasets are generated from the same set of 96 endometrial and 96 ovarian tumor samples using different experimental handling designs. The first dataset was handled by one technician in one run and its arrays were randomly assigned to tumor samples using blocking (by both array slide and row-column location on each slide). The second dataset was handled by two technicians in multiple batches. Its arrays were assigned in the order of sample collection without blocking to mimick typical practice. More detailed descriptions can be found in [Qin et al.](http://clincancerres.aacrjournals.org/content/20/13/3371.long) The former dataset is referred to as the 'uniformly-handled' dataset and the latter dataset as the 'non-uniformly-handled' dataset.
+The two core datasets are `noba.uhdata.log2` and `noba.nuhdata.log2`, both probe-level data. The unique pair of datasets are generated from the same set of 96 endometrial and 96 ovarian tumor samples using different experimental handling designs. The first dataset was handled by one technician in one run and its arrays were randomly assigned to tumor samples using blocking (by both array slide and row-column location on each slide). The second dataset was handled by two technicians in multiple batches. Its arrays were assigned in the order of sample collection without blocking to mimick typical practice. More detailed descriptions can be found in [Qin et al.](http://clincancerres.aacrjournals.org/content/20/13/3371.long) The former dataset is referred to as the 'uniformly-handled' dataset and the latter dataset as the 'nonuniformly-handled' dataset.
 
-Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.bench.log2` is the uniformly-handled probe-level dataset and `noba.bench.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.bench.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
+Each of the two datasets has two auxiliary datasets: one probe-truncated dataset and one probe-summarized dataset. For example, `noba.uhdata.log2` is the uniformly-handled probe-level dataset and `noba.uhdata.log2.p10` is the probe-truncated dataset that has 10 probes per unique probe set, and `noba.uhdata.log2.p10.psl` is the probe-summarized dataset (i.e., on the probe-set-level).
 
 `PRECISIONDATA` package is currently availabe on GitHub. To load the package, type the following command in R console:
 
@@ -19,11 +19,12 @@ library(PRECISIONDATA)
 To fetch data, use the following code:
 
 ```{r data, message = FALSE, eval = FALSE}
-data("noba.bench.log2")
-data("noba.test.log2")
+data("noba.uhdata.log2")
+data("noba.nuhdata.log2")
 ```
 
 When `PRECISIONDATA` is used, please cite the following papers:
 
-Qin LX, Zhou Q, Bogomolniy F, Villafania L, Olvera N, Cavatore M, Satagopan JM, Begg CB, Levine DA. Blocking and randomization to improve molecular biomarker discovery. Clinical Cancer Research 2014, 20:3371-3378 [http://clincancerres.aacrjournals.org/content/20/13/3371.long](http://clincancerres.aacrjournals.org/content/20/13/3371.long)
+- Huang HC, Qin LX. PRECISIONDATA: an R data package containing a unique pair of Agilent microarray datasets differed by study designs (2016). GitHub repository, https://github.com/rebeccahch/precisiondata.
 
+- Qin LX, Huang HC, Begg CB. Cautionary Note on Cross Validation in Molecular Classification. Journal of Clinical Oncology. 2016. [in press].

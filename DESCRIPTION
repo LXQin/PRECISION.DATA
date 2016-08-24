@@ -3,9 +3,9 @@ Type: Package
 Title: Datasets for the PaiREd miCrorna sImulation on Study desIgn for mOlecular classificatioN (PRECISION) Package
 Version: 0.1
 Date: 2016-04-22
-Author: Rebecca Huang, Li-Xuan Qin
-Maintainer: Rebecca Huang <huangh4@mskcc.org>
-Description: Different versions of a unique pair of Agilent microRNA microarray datasets that can be used for the PRECISION package.
+Author: Huei-Chung Huang, Li-Xuan Qin
+Maintainer: Huei-Chung Huang <hueichunghuang@gmail.com>
+Description: Contains different versions of a unique pair of Agilent microRNA microarray datasets that can be used for the PRECISION package.
 License: GPL (>= 2)
 Depends:
     R (>= 3.0.2)

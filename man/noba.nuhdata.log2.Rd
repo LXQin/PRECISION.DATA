@@ -3,13 +3,13 @@
 \docType{data}
 \name{noba.nuhdata.log2}
 \alias{noba.nuhdata.log2}
-\title{The non-uniformly-handled probe-level dataset, before preprocessing}
+\title{The nonuniformly-handled probe-level dataset, before preprocessing}
 \format{A data matrix with 53880 rows (probes) and 192 columns (samples).}
 \usage{
 noba.nuhdata.log2
 }
 \description{
-The non-uniformly-handled probe-level dataset,
+The nonuniformly-handled probe-level dataset,
 with control probes removed.
 The expressions are on a log2 scale without background adjustment.
 The sample IDs (the column names) ending with "E" or "V" are used to indicate

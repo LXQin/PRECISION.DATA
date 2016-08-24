@@ -41,9 +41,9 @@
 
 "noba.uhdata.log2.p10.psl"
 
-#' @title The non-uniformly-handled probe-level dataset, before preprocessing
+#' @title The nonuniformly-handled probe-level dataset, before preprocessing
 #'
-#' @description The non-uniformly-handled probe-level dataset,
+#' @description The nonuniformly-handled probe-level dataset,
 #' with control probes removed.
 #' The expressions are on a log2 scale without background adjustment.
 #' The sample IDs (the column names) ending with "E" or "V" are used to indicate
@@ -58,11 +58,11 @@
 
 "noba.nuhdata.log2"
 
-#' @title The non-uniformly-handled probe-level dataset, 10 probes for each unique probe
+#' @title The nonuniformly-handled probe-level dataset, 10 probes for each unique probe
 #'
-#' @description The non-uniformly-handled probe-level dataset
+#' @description The nonuniformly-handled probe-level dataset
 #' with 10 probes for each unique probe.
-#' It is truncated from the non-uniformly-handled probe-level dataset
+#' It is truncated from the nonuniformly-handled probe-level dataset
 #'  (\code{noba.nuhdata.log2.p10}), by keeping only the first 10 probes
 #'  for each unique probe.
 #'
@@ -72,10 +72,10 @@
 
 "noba.nuhdata.log2.p10"
 
-#' @title The non-uniformly-handled probe-set-level dataset
+#' @title The nonuniformly-handled probe-set-level dataset
 #'
-#' @description The non-uniformly-handled probe-set-level dataset.
-#' It is probe-set summarized from the non-uniformly-handled probe-level dataset with
+#' @description The nonuniformly-handled probe-set-level dataset.
+#' It is probe-set summarized from the nonuniformly-handled probe-level dataset with
 #' 10 probes for each unique probe (\code{noba.nuhdata.log2.p10}), using median.
 
 #' @format A data matrix with 3523 rows (probes) and 192 columns (samples).
