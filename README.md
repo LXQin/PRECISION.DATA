@@ -10,6 +10,7 @@ The package offers three versions of each dataset: (a) the probe-level data for 
 This package can be used either alone for studying microRNA expression or in combination with the PRECISION.array package for assessing the performance of various methods for data normalization and sample classification as well as different study designs for array-to-sample allocation. 
 
 The package can be installed in R:
+
 ```ruby
 devtools::install_github("LXQin/PRECISION.DATA") 
 ```
