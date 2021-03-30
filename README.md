@@ -1,5 +1,5 @@
 
-# PRECISION.DATA v0.1.0
+# PRECISION.array.DATA v0.1.0
 
 We make available the R package PRECISION.array.DATA, which contains the microRNA expression data for a set of 96 endometroid endometrial and 96 serous ovarian tumor samples. The data were collected at Memorial Sloan Kettering Cancer Center from 2000 to 2012, using the Agilent Human microRNA Microarray (Release 16.0, Agilent Technologies, Santa Clara, CA). This array platform has 3,523 markers (representing 1,205 human and 142 human viral microRNAs) and multiple replicate probes for each marker (ranging from 10 to 40); additionally, it has eight arrays on each glass slide (that is, an experimental ‘block’) arranged as two rows and four columns. 
 
